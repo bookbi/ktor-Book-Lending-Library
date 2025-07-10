@@ -1,6 +1,7 @@
 # ktor-Book-Lending-Library
 
 This project was created using the [Ktor Project Generator](https://start.ktor.io).
+
 Description: Create an API to manage a personal library of books and track borrowed and returned books. Main Functions: CRUD on Books (id, title, author, isAvailable) CRUD on LendingRecords (id, bookId, borrowerName, checkoutDate, returnDate)
 Here are some useful links to get you started:
 
