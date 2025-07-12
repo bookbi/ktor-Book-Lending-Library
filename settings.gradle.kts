@@ -1,1 +1,1 @@
-rootProject.name = "ktor-Book-Lending-Library"
+rootProject.name = "BookLendingLibraryAPI"
