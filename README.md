@@ -2,6 +2,7 @@
 
 This project was created using the [Ktor Project Generator](https://start.ktor.io).
 
+Description: Create an API to manage a personal library of books and track borrowed and returned books. Main Functions: CRUD on Books (id, title, author, isAvailable) CRUD on LendingRecords (id, bookId, borrowerName, checkoutDate, returnDate)
 Here are some useful links to get you started:
 
 - [Ktor Documentation](https://ktor.io/docs/home.html)
@@ -37,4 +38,9 @@ If the server starts successfully, you'll see the following output:
 2024-12-04 14:32:45.584 [main] INFO  Application - Application started in 0.303 seconds.
 2024-12-04 14:32:45.682 [main] INFO  Application - Responding at http://0.0.0.0:8080
 ```
+
+Business Logic: When a book is borrowed (creates a LendingRecord), change the isAvailable state of the book to false, and when it is returned, record the returnDate and change the state back to true
+Prevent borrowing books that are not available (isAvailable = false)
+
+Concepts Practiced: Managing state of linked data across tables, using transactions to ensure that changes to two pieces of data occur simultaneously and correctly
 
